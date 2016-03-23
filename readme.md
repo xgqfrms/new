@@ -3,9 +3,26 @@
 # 禁止user访问目录结构！
 
 
-(apache 限制目录访问:)[http://www.lxway.com/3316244.html] 
+(apache 限制目录访问:)
+[apache 限制目录访问:](http://www.lxway.com/3316244.html) 
 
-("apache禁止访问目录列表":)[http://www.360doc.com/relevant/77122968_more.shtml] 
+("apache禁止访问目录列表":)
+[apache禁止访问目录列表":](http://www.360doc.com/relevant/77122968_more.shtml)
+
+？？？？？？
+??????
+---
+
+？？？？？？
+??????
+
+***
+
+？？？？？？
+??????
+
+___
+
 
 ？？？？？？
 ??????
