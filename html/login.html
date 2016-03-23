@@ -34,24 +34,24 @@
 			    	<option value="admin">administrator</option>
 			    </select><br>
 				<label for="">username:</label>
-				<input type="text" id="username" name="username" placeholder="username"><br>
-				<div class="uid_check" id="uid_check">
-					<input class="tips_un_editable" type="text" placeholder="tips: user name isn't exist!">
-				</div>
+				<input type="text" id="username" name="username" placeholder="username" required=""><br>
+					<div class="uid_check" id="uid_check">
+						<input class="tips_un_editable" type="text" placeholder="tips: user name isn't exist!">
+					</div>
 				<label for="">password:</label>
 				<input type="password" id="password" name="password" placeholder="password">
 				<a href="../php/rest_pwd.php">forget password</a><br>
-				<div class="pwd_check" id="pwd_check">
-					<input class="tips_un_editable" type="text" placeholder="tips: pwd isn't right!">
-				</div>
+					<div class="pwd_check" id="pwd_check">
+						<input class="tips_un_editable" type="text" placeholder="tips: pwd isn't right!">
+					</div>
 				<!-- 验证码 -->
 				<label for="textcode">captchar:</label> 
 			    <input type="text" name="textcode" id="textcode" /> 
 			    <img id="imgcode" src="../php/verifycode.php" alt="验证码" /> 
 			    <a href="javascript:refresh_code()">看不清？换一个</a><br>
-			    <div class="ccode_check" id="ccode_check">
-			    	<input class="tips_un_editable" type="text" placeholder="tips: captchar isn't right!">
-			    </div>
+				    <div class="ccode_check" id="ccode_check">
+				    	<input class="tips_un_editable" type="text" placeholder="tips: captchar isn't right!">
+				    </div>
 			    <div class="l_button">
 			    	<input class="b__decorate" type="reset" value="reset">
 			    	<!-- <input type="submit" name="submit" id="submit" value="提交" />  -->
