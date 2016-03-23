@@ -34,24 +34,32 @@
 			    	<option value="admin">administrator</option>
 			    </select><br>
 				<label for="">username:</label>
-				<input type="text" id="username" name="username" placeholder="username" required=""><br>
+				<input type="text" id="username" name="username" placeholder="username" required="required"><br>
 					<div class="uid_check" id="uid_check">
 						<input class="tips_un_editable" type="text" placeholder="tips: user name isn't exist!">
 					</div>
 				<label for="">password:</label>
-				<input type="password" id="password" name="password" placeholder="password">
+				<input type="password" id="password" name="password" placeholder="password" required="required">
 				<a href="../php/rest_pwd.php">forget password</a><br>
 					<div class="pwd_check" id="pwd_check">
 						<input class="tips_un_editable" type="text" placeholder="tips: pwd isn't right!">
 					</div>
 				<!-- 验证码 -->
 				<label for="textcode">captchar:</label> 
-			    <input type="text" name="textcode" id="textcode" /> 
+			    <input type="text" name="textcode" id="textcode" placeholder="captchar" required="required" /> 
 			    <img id="imgcode" src="../php/verifycode.php" alt="验证码" /> 
 			    <a href="javascript:refresh_code()">看不清？换一个</a><br>
 				    <div class="ccode_check" id="ccode_check">
 				    	<input class="tips_un_editable" type="text" placeholder="tips: captchar isn't right!">
 				    </div>
+			    <div class="all_validation" id="all_validation">
+			    	<label for="" id="l_item">Google :</label><br>
+			    	<a href="http://www.cnblogs.com/xgqfrms/p/4981621.html">Are you a robot? Introducing “No CAPTCHA reCAPTCHA”</a><br>
+			    	<img src="../images/google.gif" alt="google.gif">
+			    	<label for="" id="l_item">SMS :</label><br>
+			    	<a href="#">SMS validation</a><br>
+			    	<img src="../images/win10.gif" alt="../images/win10.gif">
+			    </div>
 			    <div class="l_button">
 			    	<input class="b__decorate" type="reset" value="reset">
 			    	<!-- <input type="submit" name="submit" id="submit" value="提交" />  -->
@@ -80,7 +88,7 @@
 				<input type="text" value="" name="" id="" placeholder="username"><span class="o_tips"></span>tips:error<br>
 				<label for="">password :</label>
 				<input type="password" value="" name="" id="" placeholder="password"><span class=o_"tips">tips:error</span><br>
-				<input type="reset" value="reset" name="" id=""><br>
+				<input type="reset" value="reset" name="" id="">
 				<input type="submit" value="submit" name="" id=""><br>
 			</form>
 		</div>

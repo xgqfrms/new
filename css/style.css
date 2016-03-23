@@ -46,6 +46,26 @@ body{
 .tips_un_editable{
 	/**/
 }
+.all_validation{
+	border: 1px solid #f0cc0f;
+	border-radius: 12px;
+	/*display: none;*/
+	/*display: none; 不影响html结构*/
+	/*visibility: hidden;*/
+	/*visibility: hidden;影响html结构，出现空白div*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*index*/
 
 
