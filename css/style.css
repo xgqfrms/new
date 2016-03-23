@@ -7,6 +7,7 @@ body{
 	margin:30px 100px;
 	border:1px solid red;
 }
+
 /*register*/
 
 .container_register{
@@ -20,10 +21,45 @@ body{
 	background-color: #00ff00;
 }
 
+.readme_items{
+	/*scroll-behavior: smooth;*/
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*login*/
+.l_header{
+	background-color: #000000;
+	overflow: hidden;
+}
+.h_logo{
+	background-color: #f0f0f0;
+}
+.l_header .L_float{
+	float: left;
+	margin-right: 10px;
+}
+.l_header .ll_link a{
+	font-size: 14px;
+	color: #ff0000;
+}
 .container_login{
 	background-color: #abcdef;
+	clear: both;
 }
 .container_login .a_link{
 	background-color: #ff0000;
