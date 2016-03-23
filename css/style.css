@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #F3DDB6;
+	margin:30px 100px;
+	border:1px solid red;
+}
+/*register*/
+
+.container_register{
+	background-color: #abcdef;
+}
+
+.container_register.a_link{
+	background-color: #ff0000;
+}
+.container_register.login_form{
+	background-color: #00ff00;
+}
+
+
+/*login*/
+.container_login{
+	background-color: #abcdef;
+}
+.container_login .a_link{
+	background-color: #ff0000;
+}
+.container_login .login_form{
+	background-color: #00ff00;
+}
+
+.a_no_decorate{
+	text-decoration: none;
+	font-size: 23px;
+	/*color: #00ff00;*/
+}
+.login_button{
+	border-radius: 10px;
+}
+.l_button .b__decorate{
+    border-radius: 5px;
+}
+.tips_un_editable{
+	
+}
+/*index*/
+
+
+
+
+
+
+/*compact*/

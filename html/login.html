@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<!--favicon.icon-->
+	<link href="../images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+	<!--media query-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Login Page</title>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div id="l_header" class="l_header">
+		<a href="#">logo</a>
+		banner
+	</div>
+	<div class="container_login" id="container_login">
+	    <div class="a_link" id="a_link">
+	    	<a href="http://www.xgqfrms.xyz/new/" class="h_link">Home</a>&gt;&gt;
+	    	<a href="http://www.xgqfrms.xyz/new/html/" class="h_link">HTML</a>&gt;&gt;
+	    	<span>Login:»</span>
+	    </div>
+	    <hr>
+		<label for="">login</label>
+		<div class="login_form" id="login_form">
+			<form id="l_form" class="l_form" action="../php/login.php" method="post">
+			    <label for="">identity:</label>
+			    <select name="identity" id="identity">
+			    	<option value="student" selected="">student</option>
+			    	<option value="teacher">teacher</option>
+			    	<option value="admin">administrator</option>
+			    </select><br>
+				<label for="">username:</label>
+				<input type="text" id="username" name="username" placeholder="username"><br>
+				<div class="uid_check" id="uid_check">
+					<input class="tips_un_editable" type="text" placeholder="tips: user name isn't exist!">
+				</div>
+				<label for="">password:</label>
+				<input type="password" id="password" name="password" placeholder="password">
+				<a href="../php/rest_pwd.php">forget password</a><br>
+				<div class="pwd_check" id="pwd_check">
+					<input class="tips_un_editable" type="text" placeholder="tips: pwd isn't right!">
+				</div>
+				<!-- 验证码 -->
+				<label for="textcode">captchar:</label> 
+			    <input type="text" name="textcode" id="textcode" /> 
+			    <img id="imgcode" src="../php/verifycode.php" alt="验证码" /> 
+			    <a href="javascript:refresh_code()">看不清？换一个</a><br>
+			    <div class="ccode_check" id="ccode_check">
+			    	<input class="tips_un_editable" type="text" placeholder="tips: captchar isn't right!">
+			    </div>
+			    <div class="l_button">
+			    	<input class="b__decorate" type="reset" value="reset">
+			    	<!-- <input type="submit" name="submit" id="submit" value="提交" />  -->
+			    	<input class="b__decorate" type="submit" value="login" name="submit" id="submit">
+			    </div>
+			</form>
+			<!-- button -->
+			<button class="login_button" id="login_button" value="register">
+				<a class="a_no_decorate" href="http://www.xgqfrms.xyz/new/html/register.html">register now!</a>
+			</button>
+		</div>
+		<div class="oauth">
+			<label for="">OAuth</label>
+			<form action="" class="cotainer_oauth">
+				<label for="">OAuth list</label>
+				<select name="oauth_list" id="oauth_list">
+					<option value="">GitHub</option>
+					<option value="">Google</option>
+					<option value="">Microsoft</option>
+					<option value="">Facebook</option>
+					<option value="">Twitter</option>
+					<option value="">weixin</option>
+					<option value="">weibo</option>
+				</select><br>
+				<label for="">username :</label>
+				<input type="text" value="" name="" id="" placeholder="username"><span class="o_tips"></span>tips:error<br>
+				<label for="">password :</label>
+				<input type="password" value="" name="" id="" placeholder="password"><span class=o_"tips">tips:error</span><br>
+				<input type="reset" value="reset" name="" id=""><br>
+				<input type="submit" value="submit" name="" id=""><br>
+			</form>
+		</div>
+	</div>
+	<div id="l_footer" class="l_footer">
+		copyright xgqfrms 2012-2016 <br>
+	</div>
+	<div class="javascript_container">
+		<script > 
+		 function refresh_code() 
+		 { 
+		  l_form.imgcode.src="../php/verifycode.php?a="+Math.random(); 
+		 } 
+		</script>
+	</div>
+</body>
+</html>
