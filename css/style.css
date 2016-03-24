@@ -8,6 +8,43 @@ body{
 	border:1px solid red;
 }
 
+.img_diamond{
+	width: 100px;
+	height: 100px;
+	background-color: #00ff00;
+	/*border-radius: 50px;*/
+}
+.container{
+	background-color: #33aa33;
+	clear: both;
+}
+
+.i_header{
+	float: left;
+	background-color: #000000;
+}
+.i_header a{
+	color: #ffffff;
+}
+.h_logo{
+	float: left;
+}
+.h_n_link{
+	float: left;
+	margin:50px 100px;
+	color: #00ff00;
+}
+.h_l_link{
+	float: left;
+	margin:50px 100px 50px 424px ;
+	font-size: 14px;
+	color: #ff0000;
+}
+
+
+
+
+
 /*register*/
 
 .container_register{
