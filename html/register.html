@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<!-- SEO : Search Engine Optimization  -->
+	<meta name="keywords" content="DSQCW,Data Structure Quality Course Website">
+	<meta name="description" content="DSQCW:Data Structure Quality Course Website. It is a free Website for anybody who wants to learn Data Structure!">
+	<meta name="author" content="xgqfrms 2016">
+	<meta name="generator" content="Sublime Text3 && WAMP || LAMP">
+	<!-- Browser Compatiable -->
 	<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<!--favicon.icon-->
@@ -21,9 +27,9 @@
     </div>
 	<div class="container_register" id="container_register">
 		<p>register</p>
-		<form class="r_from" action="../php/register.php" method=post enctype="multipart/form-data">
+		<form class="r_from" name="r_form" id="r_from"  autocomplete="on" action="../php/register.php" method=post enctype="multipart/form-data">
 			<label for="">username :<span>*</span>:</label>
-			<input type="text" class="r_item1" placeholder="SB@ufo$2008" required="required" pattern="">
+			<input type="text" class="r_item1" placeholder="SB@ufo$2008" autofocus="true" required="required" pattern="">
 				<span>username should be [A-Z]+[a-z]+[0-9]+[~!@#$%^&*()_+-=] && 8+character </span><br>
 			<label for="">password</label>
 			<input type="password" alt="pwd" placeholder="********" required="required" pattern=""><br>
@@ -189,6 +195,22 @@
 				精品课全民终身学习课程平台（www.jingpinke.com）及其涉及到的产品、相关软件的所有权和运作权归教育部精品课全民终身学习课程平台所有，精品课全民终身学习课程平台享有对精品课全民终身学习课程平台上一切活动的监督、提示、检查、纠正及处罚等权利。用户通过注册程序阅读本服务条款并点击"同意"按钮完成注册，即表示用户与精品课全民终身学习课程平台已达成协议，自愿接受本服务条款的所有内容。如果用户不同意服务条款的条件，则不能获得使用www.jingpinke.com的服务以及注册成为精品课全民终身学习课程平台用户的权利。
 			</textarea><br>
 			<input type="submit" class="r_itemx" value="agree & submit" alt="submit">
+			<div>
+				<p>
+					精品课全民终身学习课程平台（www.jingpinke.com）服务条款
+					一、服务条款的确认和接纳
+					精品课全民终身学习课程平台（www.jingpinke.com）及其涉及到的产品、相关软件的所有权和运作权归教育部精品课全民终身学习课程平台所有，精品课全民终身学习课程平台享有对精品课全民终身学习课程平台上一切活动的监督、提示、检查、纠正及处罚等权利。用户通过注册程序阅读本服务条款并点击"同意"按钮完成注册，即表示用户与精品课全民终身学习课程平台已达成协议，自愿接受本服务条款的所有内容。如果用户不同意服务条款的条件，则不能获得使用www.jingpinke.com的服务以及注册成为精品课全民终身学习课程平台用户的权利。
+				</p>
+				<input type="checkbox" name="read_right" checked="" form="r_from"><span>确认和接受DSQCW用户协议</span>
+				<!-- input_form === form_id
+				<form action="demo-form.php" id="form1">
+				  First name: <input type="text" name="fname"><br>
+				  <input type="submit" value="Submit">
+				</form>
+
+				Last name: <input type="text" name="lname" form="form1">
+				 -->
+			</div>
 		</form>
 		<form action="products.cgi" method="post" enctype="multipart/form-data">
 		  <table>
